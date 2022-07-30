@@ -5,8 +5,8 @@ class Character {
         this.attack = attack;
     }
 }
-class Man extends  Character{
 
+class Man extends  Character {
     factory(race) {
         return new Man(race, 1000, 200)
     }
@@ -14,8 +14,7 @@ class Man extends  Character{
             return new Weapons('sword')
         }
 }
-class Elf extends  Character{
-
+class Elf extends  Character {
     factory(race) {
         return new Elf(race, 2000, 100)
     }
@@ -23,8 +22,7 @@ class Elf extends  Character{
         return new Weapons('arch')
     }
 }
-class Dwarf extends  Character{
-
+class Dwarf extends  Character {
     factory(race) {
         return  new Dwarf(race, 1500, 150)
     }
